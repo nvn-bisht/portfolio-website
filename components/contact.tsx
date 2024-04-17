@@ -34,13 +34,13 @@ export default function Contact() {
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
+          imnaveenbisht@gmail.com
         </a>{" "}
         or through this form.
       </p>
 
       <form
-        className="mt-10 flex flex-col dark:text-black"
+        className="mt-10 flex flex-col dark:text-black  "
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
@@ -52,8 +52,25 @@ export default function Contact() {
           toast.success("Email sent successfully!");
         }}
       >
+        <div className="flex justify-between  py-4">
+          <input
+            className="h-14 rounded-lg  dark:bg-slate-700/50 dark:bg-opacity-80 dark:text-gray-100 dark:focus:bg-opacity-100 transition-all dark:outline-none p-5 glow-border focus:border-2 focus:border-purple-600 "
+            name="senderFirstName"
+            type="text"
+            required
+            placeholder="First Name"
+          />
+
+          <input
+            className="h-14 rounded-lg borderBlack dark:bg-slate-700/50 dark:bg-opacity-80 dark:text-gray-100 dark:focus:bg-opacity-100 transition-all dark:outline-none p-5 glow-border focus:border-2 focus:border-purple-600 "
+            name="senderLastName"
+            type="text"
+            required
+            placeholder="Last Name"
+          />
+        </div>
         <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-slate-700/50 dark:bg-opacity-80 dark:text-gray-100 dark:focus:bg-opacity-100 transition-all dark:outline-none glow-border focus:border-2 focus:border-purple-600 "
           name="senderEmail"
           type="email"
           required
@@ -61,13 +78,13 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-52 my-3 rounded-lg dark:text-gray-100 borderBlack p-4 dark:bg-slate-700/50 dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none glow-border focus:border-2 focus:border-purple-600 "
           name="message"
           placeholder="Your message"
           required
           maxLength={5000}
         />
-        <SubmitBtn />
+        <SubmitBtn className="self-center" />
       </form>
     </motion.section>
   );

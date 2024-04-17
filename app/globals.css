@@ -13,3 +13,19 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.glow-border {
+  box-shadow: 0 0 0 0.5px rgba(139, 92, 246, 0.8) inset,
+    0 0 3px rgba(139, 92, 246, 0.8);
+}

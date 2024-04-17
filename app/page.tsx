@@ -1,3 +1,4 @@
+import TechStack from "@/components/TechStack";
 import About from "@/components/about";
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
@@ -11,10 +12,11 @@ export default function Home() {
     <main className="flex flex-col items-center px-4">
       <Intro />
       <SectionDivider />
-      <About />
+      {/* <About /> */}
       <Projects />
-      <Skills />
-      <Experience />
+      <TechStack />
+      {/* <Experience /> */}
+
       <Contact />
     </main>
   );

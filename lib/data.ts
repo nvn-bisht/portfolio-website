@@ -2,19 +2,17 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import nvnMusicImg from "@/public/nvnMuusic.png";
+import chatapplicationProject from "@/public/chatapplicationproject.png";
+import discrodproject from "@/public/discordproject.png";
+import spotifyproject from "@/public/spotifyproject.png";
 
 export const links = [
   {
     name: "Home",
     hash: "#home",
   },
-  {
-    name: "About",
-    hash: "#about",
-  },
+
   {
     name: "Projects",
     hash: "#projects",
@@ -24,8 +22,8 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Education",
+    hash: "#education",
   },
   {
     name: "Contact",
@@ -62,25 +60,31 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "NVN Music",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "An online music applicaion that allows users to listen to music from an external API. The main focus of this project was redux and frontend development.",
+    tags: ["React", "Jio Saavn API", "Redux", "Tailwind", "Axios"],
+    imageUrl: nvnMusicImg,
   },
   {
-    title: "rmtDev",
+    title: "Spotify Clone",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "An online full-stack spotify clone. User can upload songs, listen to them and add them to their playlist.",
+    tags: ["React", "Javascript", "MongoDB", "Tailwind", "Express JS"],
+    imageUrl: spotifyproject,
   },
   {
-    title: "Word Analytics",
+    title: "Chat Application",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A full-stack chat application. User can login, search users, and chat with other users .",
+    tags: ["Next JS", "React", "Javascript", "Tailwind", "Firebase"],
+    imageUrl: chatapplicationProject,
+  },
+  {
+    title: "Discord Clone",
+    description: "A Discord clone using Next JS .",
+    tags: ["React", "Next.js", "SQL", "Tailwind", "ShadCN"],
+    imageUrl: discrodproject,
   },
 ] as const;
 

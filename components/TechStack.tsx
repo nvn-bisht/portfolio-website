@@ -93,7 +93,7 @@ const TechStack = ({}: TechStackProps) => {
               },
               {
                 name: "Nest Js",
-                image: "https://nestjs.com/logo-small.ede75a6b.svg",
+                image: "https://nestjs.com/logo-small-gradient.76616405.svg",
               },
               {
                 name: "GraphQL",
@@ -103,7 +103,7 @@ const TechStack = ({}: TechStackProps) => {
               {
                 name: "Next Auth",
                 image:
-                  "https://github.com/nextauthjs/next-auth/blob/main/docs/static/img/logo/logo.png?raw=true",
+                  "https://next-auth.js.org/img/logo/logo-sm.png",
               },
               {
                 name: "Sequelize",

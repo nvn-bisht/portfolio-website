@@ -65,6 +65,7 @@ export const projectsData = [
       "An online music applicaion that allows users to listen to music from an external API. The main focus of this project was redux and frontend development.",
     tags: ["React", "Jio Saavn API", "Redux", "Tailwind", "Axios"],
     imageUrl: nvnMusicImg,
+    link: "https://github.com/nvn152/nvnmusic",
   },
   {
     title: "Spotify Clone",
@@ -72,6 +73,7 @@ export const projectsData = [
       "An online full-stack spotify clone. User can upload songs, listen to them and add them to their playlist.",
     tags: ["React", "Javascript", "MongoDB", "Tailwind", "Express JS"],
     imageUrl: spotifyproject,
+    link: "https://github.com/nvn152/spotify-clone",
   },
   {
     title: "Chat Application",
@@ -79,12 +81,14 @@ export const projectsData = [
       "A full-stack chat application. User can login, search users, and chat with other users .",
     tags: ["Next JS", "React", "Javascript", "Tailwind", "Firebase"],
     imageUrl: chatapplicationProject,
+    link: "https://github.com/nvn152/chat-appliication",
   },
   {
     title: "Discord Clone",
     description: "A Discord clone using Next JS .",
     tags: ["React", "Next.js", "SQL", "Tailwind", "ShadCN"],
     imageUrl: discrodproject,
+    link: "https://github.com/nvn152/discord-clone",
   },
 ] as const;
 

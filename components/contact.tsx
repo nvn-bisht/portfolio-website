@@ -52,9 +52,9 @@ export default function Contact() {
           toast.success("Email sent successfully!");
         }}
       >
-        <div className="flex flex-col md:flex-row items-start justify-between gap-3  py-4">
+        <div className="flex md:flex-row items-start justify-between gap-3  py-4">
           <input
-            className="h-14 rounded-lg  dark:bg-slate-700/50 dark:bg-opacity-80 dark:text-gray-100 dark:focus:bg-opacity-100 transition-all dark:outline-none p-5 glow-border focus:border-2 w-48 focus:border-purple-600 "
+            className="h-14 rounded-lg  dark:bg-slate-700/50 dark:bg-opacity-80 dark:text-gray-100 dark:focus:bg-opacity-100 transition-all dark:outline-none p-5 glow-border focus:border-2 focus:border-purple-600 w-full"
             name="senderFirstName"
             type="text"
             required
@@ -62,7 +62,7 @@ export default function Contact() {
           />
 
           <input
-            className="h-14 w-48 self-end rounded-lg borderBlack dark:bg-slate-700/50 dark:bg-opacity-80 dark:text-gray-100 dark:focus:bg-opacity-100 transition-all dark:outline-none p-5 glow-border focus:border-2 focus:border-purple-600 "
+            className="h-14 w-full self-end rounded-lg borderBlack dark:bg-slate-700/50 dark:bg-opacity-80 dark:text-gray-100 dark:focus:bg-opacity-100 transition-all dark:outline-none p-5 glow-border focus:border-2 focus:border-purple-600 "
             name="senderLastName"
             type="text"
             required
